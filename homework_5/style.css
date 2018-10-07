@@ -2,19 +2,19 @@
 @font-face{
 
 	font-family: Franklin;
-	src:url(FRABK.ttf);
+	src:url(fonts/FRABK.ttf);
 
 }
 
 @font-face{
 	font-family: Franklin Medium;
-	src:url(framd.ttf);
+	src:url(fonts/framd.ttf);
 
 }
 
 @font-face{
 	font-family: Franklin Heavy;
-	src:url(FRAHV.ttf);
+	src:url(fonts/FRAHV.ttf);
 }
 
 li {
