@@ -1,0 +1,4 @@
+[1006/155441.325:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\foneu\AppData\Local\Google\Chrome\User Data\Crashpad\reports\11c2c09d-4b7c-4551-b8ad-1354bdf9da17.dmp: The process cannot access the file because it is being used by another process. (0x20)
+[1006/155442.765:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[1006/155442.905:ERROR:crashpad_client_win.cc(130)] crash server failed to launch, self-terminating
+[1006/155443.640:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\foneu\AppData\Local\Google\Chrome\User Data\Crashpad\reports\31d4eff1-5156-4985-adf1-7851b92df5a2.dmp: The process cannot access the file because it is being used by another process. (0x20)
