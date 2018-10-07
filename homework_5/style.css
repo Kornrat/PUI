@@ -1,3 +1,4 @@
+/* initializing 3 fonts */
 
 @font-face{
 
@@ -17,6 +18,8 @@
 	src:url(fonts/FRAHV.ttf);
 }
 
+
+/*navigation bar formatting*/
 li {
 	display: inline;
 }
@@ -33,6 +36,7 @@ li:hover{
 
 }
 
+/*navigation bar link formatting*/
 .button {
 	font-family:"Franklin Heavy";
 	text-align: center;
@@ -45,13 +49,14 @@ li:hover{
 }
 
 
-
+/*navigation bar icons formatting*/
 img.icons {
 	vertical-align: bottom;
 }
 
 
 
+/*content below nav bar formatting*/
 
 .content{
 	border-top: solid;
@@ -65,7 +70,7 @@ img.icons {
 
 }
 
-
+/*links in the content*/
 .content > a{
 	padding: 4px 12px;
 	display:inline-block;
@@ -77,6 +82,8 @@ img.icons {
 	font-size: 24px;
 }
 
+
+/*title of page formatting*/
 h2 {
 	font-weight:bold;
 	font-size:30px;
@@ -84,6 +91,8 @@ h2 {
 	line-height: 6px;
 
 }
+
+/*Back to browse button formatting*/
 
 h3 {
 
@@ -118,6 +127,7 @@ h4 > a {
 }
 
 
+/*browsing page flavor button formatting*/
 
 .flavor{
 
@@ -130,11 +140,15 @@ h4 > a {
 	box-shadow: 2px 4px 10px grey;
 }
 
+/*browse page grid formatting*/
+
 .gridcontainer {
 	display:grid;
 	grid-template-columns:auto auto auto;
 	grid-row-gap:60px;
 }
+
+/*browse page each grid item formatting*/
 
 .griddetail {
 	display:grid;
@@ -143,6 +157,8 @@ h4 > a {
 
 	padding-left:40px;
 }
+
+/*detail page - large product image formatting*/
 
 .item-a{
 	grid-column-start:1;
@@ -153,9 +169,9 @@ h4 > a {
 	text-align: left;
 	padding-right:30px;
 
-
-
 }
+
+/*detail page - product description text formatting*/
 
 .item-b{
 
@@ -173,6 +189,9 @@ h4 > a {
 
 }
 
+
+/*detail page - category of choices e.g. glazing, quantity*/
+
 .item-c{
 
 
@@ -189,6 +208,8 @@ h4 > a {
 	line-height: 25px;
 }
 
+/*detail page - each category formatting*/
+
 .item-c-list{
 	text-align: left;
 	grid-column-start:2;
@@ -201,8 +222,10 @@ h4 > a {
 	border-width: 0.5px
 }
 
-.item-d{
 
+/*detail page - drop down option formatting*/
+
+.item-d{
 
 	float:right;
 	grid-column-start:3;
@@ -218,6 +241,8 @@ h4 > a {
 	line-height: 25px;
 	text-shadow: 2px 2px 2px #D0D0D0;
 }
+
+/*detail page - total price text formatting*/
 
 .totalPrice {
 	float:right;
@@ -236,6 +261,8 @@ h4 > a {
 
 }
 
+/*detail page - Add to cart button formatting*/
+
 .item-e{
 
 
@@ -252,7 +279,6 @@ h4 > a {
 	border-style:solid;
 	box-shadow: 2px 4px 10px grey;
 	margin-left: 235px
-
 
 
 }
