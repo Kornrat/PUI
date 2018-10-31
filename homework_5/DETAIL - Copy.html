@@ -4,12 +4,23 @@
     <title>Bun Bun Bake Shop</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="js.js"></script>
+
+
 </head>
 
-<body>
+<body onload="startup()">
+
+    <!-- jQuery script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- navigation bar on top -->
+
+
+    <!-- add to cart popup -->
+    <div id="popupContainer" >
+        <div id="popupContent" class="popContainer">                    
+        </div>
+    </div>
 
     <nav id="navbar">
         <ul>
@@ -19,7 +30,7 @@
             <li>
                 <a class="button" href="HOME.html">Home</a></li>
             <li>
-                <a class="button" href="BROWSE.html">Browse</a></li>
+                <a class="button" href="BROWSE copy.html">Browse</a></li>
             <li>
                 <a class="button" href="HOME.html">Nutrition</a></li>
             <li>
@@ -27,19 +38,26 @@
             <li>
                 <a class="button" href="HOME.html">Contact</a></li>
             <li>
-    	       <a class="button" href="HOME.html">
-    	           <img class="icons" src="cart.png" alt="cart" width="90" height="45"></a></li>
+    	       <a class="button" href="SHOPPING.html">
+    	           <img class="icons" src="cart.png" alt="cart" width="70" height="45"></a>
+                
+                    <!-- display cart item number -->
+                   <p id = "cartItemNumber" class= "itemNumber">(0)</p>
+                   <br>
+                 
+            </li>
         </ul>
     </nav>
 
+    <br>
 
     <div class="content">
 
         <!-- title of page-->
-        <h2>The Original Cinnamon Roll</h2>
+        <h2 id="bunName"></h2>
 
         <!-- Back to browse button -->
-        <h3><a href="BROWSE.html">◂ Back to browse</a></h3>
+        <h3><a href="BROWSE copy.html">◂ Back to browse</a></h3>
         <br>
 
         <!-- css grid -->
@@ -47,7 +65,7 @@
             
             <!-- image of product detail-->
             <div class="item-a">
-            <img src="bun.png" alt="Original Cinnamon Bun" width="400" height="445">
+            <img id="bunImg" src="none.jpg" alt="Original Cinnamon Bun" width="400" height="400">
             </div>
 
             <!-- content text of product description-->
@@ -70,40 +88,60 @@
                 <hr>
                 </div> 
 
-            <!-- drop down text -->
 
             <div class="item-d">
-                <div class="dropbtn">
-                6▾
+    
+                <!-- drop down for quantity -->
+
+                <select onchange="changePrice()" id="mySelect">
+                <div id="qDropdown" class="dropdown-content">
+                <option value="1">1 roll</option>
+                <option value="3">3 rolls</option>
+                <option value="6">6 rolls</option>
+                <option value="12">12 rolls</option>
+                </div>  
+                </select>
+
+                <br>
+                <br>
+
+                <!-- drop down for quantity -->
+                <select onchange="changePic()" id="gDropdown">
+                <div class="dropdown-content">
+                <option id="none" value="none.jpg"></option>
+                <option id="sugarmilk" value="sugar.jpg"></option>
+                <option id="vanillamilk" value="vanilla.jpg"></option>
+                <option id="doublechocolate" value="chocolate.jpg"></option>
                 </div>
+                </select>
+
+
                 <br>
                 <br>
-                Sugar Milk▾
                 <br>
                 <br>
-                <br>
-                <br>
+                
                 </div>
 
             <!-- total price text -->
 
-            <div class="totalPrice">
-                Total: $12
+            <div class="totalPrice" id="tPrice">
                 </div>
 
             <!-- Add to cart button -->
 
-            <div class="item-e">
+            <div id = "AddToCart" onclick= "AddToCart()" class="item-e">
                 Add to Cart
                 </div>
-            <h4><a href="BROWSE.html">◂ Back to browse</a></h4>
+            <h4><a href="BROWSE copy.html">◂ Back to browse</a></h4>
 
         </div>
     </div>
-    
+
+    <!-- local  javascript -->
+    <script src="js.js"></script>
+
 </body>
-
-
 
 </html>
 

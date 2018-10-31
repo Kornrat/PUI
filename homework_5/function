@@ -1,0 +1,5 @@
+function quantityDropdown() {
+
+	document.getElementById("qDropdown").classList.toggle("show");
+
+}
