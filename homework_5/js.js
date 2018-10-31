@@ -177,7 +177,6 @@ function showItem() {
 	}
 
 
-
 	// remove from cart button
 	$("button").click(function(){
 
