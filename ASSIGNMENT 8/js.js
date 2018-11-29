@@ -65,6 +65,8 @@ function setup(){
 
 //p5//
 
+	var sW = 6;
+
 function draw(){
 
 	var cnv = createCanvas(windowWidth, 800)
@@ -77,9 +79,10 @@ function draw(){
 	var contactme = select("#contactme")
 
 
+
 	push();
 
-	strokeWeight(6);
+	strokeWeight(sW);
 	stroke(255,0,0);
 
 	x1 = windowWidth/4
@@ -137,10 +140,44 @@ function draw(){
 //p5 MEDIA CHANGES
 function myFunction(x) {
     if (x.matches) { // If media query matches
-        introT.position(0, 0);
-        r1 = 100;
-        r2 = 100;
-        r3 = 100;
+
+ 
+
+        sW = 1;
+
+ 	if(mouseX>windowWidth/2 && mouseY<windowHeight/2){ //hover over top right circle
+
+ 		frameRate(10) 
+ 		r1 = 200 + random(1,5) //size change and shake
+ 		r2 = 100
+ 		r3 = 100
+ 		changeText1(); //text changes
+
+ 	} else if(mouseX>windowWidth/2 && mouseY>windowHeight/2){ //hover over bottom right circle
+
+ 		frameRate(10); 
+ 		r3 = 200 + random(1,5); //size change and shake
+  		r1 = 100;
+ 		r2 = 100;
+ 		changeText3();//text changes
+
+ 	} else if(mouseX<windowWidth/2 && mouseY>windowHeight/2){ //hover over bottom left circle
+
+ 		frameRate(10)
+ 		r2 = 200 + random(1,5)//size change and shake
+  		r1 = 100
+ 		r3 = 100
+ 		changeText2(); //text changes
+
+ 	} else if(mouseX<windowWidth/2 && mouseY<windowHeight/2){
+
+ 		frameRate(10);
+ 		pX = pX + random(-2,2)
+ 		pY = pY + random(-2,2)
+ 		changeText4();
+
+ 	}
+
 
     } 
 }
