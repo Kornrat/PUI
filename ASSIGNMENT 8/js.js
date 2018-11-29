@@ -3,8 +3,9 @@ var r1 = 200 //variables for circle size
 var r2 = 200
 var r3 = 200
 
-var pX = 100;
+var pX = 0;
 var pY = 0;
+
 
 
 
@@ -133,8 +134,23 @@ function draw(){
 
  	}
 
+//p5 MEDIA CHANGES
+function myFunction(x) {
+    if (x.matches) { // If media query matches
+        introT.position(0, 0);
+        r1 = 100;
+        r2 = 100;
+        r3 = 100;
+
+    } 
 }
 
+var x = window.matchMedia("(max-width: 500px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes 
+}
+
+//
 
 function changeText1(){ //text change for top right circle
 
@@ -186,4 +202,6 @@ function scrolling(){
 }
 
 
+
+/// MEDIA QUERY - RESPONSIVE SITE///
 
