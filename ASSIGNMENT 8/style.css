@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+
+body {
+
+
+	background: white;
+	font-family: 'Roboto', sans-serif;
+		
+	text-align: left;
+
+}
+
+#gridcon {
+	display:grid;
+	grid-template-columns: auto auto;
+}
+
+.name {
+
+
+	font-weight: normal;
+
+}
+
+.type {
+
+	font-weight: heavy;
+}
+
+#projects {
+
+		list-style-type: none;
+
+
+}
+
+.circleText {
+
+	text-align: center;
+	color:red;
+	font-size: 20px;
+    -webkit-transform: translate(-40%, -60%); 
+    position: absolute;
+
+
+}
+
+ul {
+	margin-left: 80px;
+
+		cursor: pointer;
+
+}
+
+#projectlist {
+
+	grid-column:1;
+	color: red;
+	font-size: 40px;
+
+
+	border-collapse:collapse; 
+
+
+	line-height:70px;
+	display:inline;
+
+}
+
+#sideim {
+
+	grid-column:2;
+		margin-left:200px;
+}
+
+
+#sideimage{
+
+	float:left;
+	margin-top: 200px;
+
+
+	width:600px;
+}
+
+
+.bigger {
+		color: red;
+	font-size: 30px;
+}
+
+
+
+.outline {
+
+	color: transparent;
+	-webkit-text-stroke-width: 0.5px;
+   -webkit-text-stroke-color: grey;
+
+	    border-bottom: none;
+
+
+}
+
+#bgimg {
+	display:inline;
+
+	z-index: -1;
+}
+
+
+
+#myintro {
+		font-family: 'Roboto', sans-serif;
+		display:inline-block;
+	position:absolute;
+	z-index: 1;
+}
+
+#closebutton {
+	cursor: pointer;
+	font-size: 20px;
+	display: inline;
+	float: right;
+}
+
+#sidebar {
+	margin-top: 70px;
+	margin-left: 30px;
+	float:left;
+
+	text-transform:uppercase;
+	font-size:12px;
+	padding-right: 100px;
+
+}
+
+img{
+	width:750px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+
+
+#try {
+	display: inline;
+	z-index: 1;
+}
+
+#popup {
+
+
+	padding:10px;
+	  background: #a1ffce; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #a1ffce, #faffd1); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #a1ffce, #faffd1); 
+}
+
+
+
+#iText {
+
+	color:red;
+
+	font-size:80px;
+}
+
+
+.projectName {
+	color:red;
+	margin-left:40px;
+
+	font-size: 80px;
+}
+
+
+#contentgrid {
+	margin:30px;
+	display:flex;
+	overflow-y: hidden;
+	position: relative;
+}
+
+#content {
+
+
+		width:50%;
+}
+
+#images {
+
+		width:50%;
+
+}
+
+.back {
+
+	color:red;
+	text-decoration: none;
+}
+
+.projectText {
+
+	text-align: justify;
+	line-height: 25px;
+	margin-left:40px;
+	margin-right: 100px;
+
+	font-size: 12px;
+
+
+}
