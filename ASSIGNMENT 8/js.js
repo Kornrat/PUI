@@ -69,7 +69,9 @@ function setup(){
 
 function draw(){
 
-	var cnv = createCanvas(windowWidth, 800)
+	var mywidth = document.body.clientWidth
+
+	var cnv = createCanvas(mywidth, windowHeight)
 	cnv.parent("#intro")
 
 	var introT = select("#iText") //grabbing html elements
@@ -141,7 +143,10 @@ function draw(){
 function myFunction(x) {
     if (x.matches) { // If media query matches
 
- 
+    	pX = 20;
+    	pY = 50;
+
+ 		$("#iText").html("A collection <br /> of projects<br />by Fon E.")
 
         sW = 1;
 
@@ -172,8 +177,7 @@ function myFunction(x) {
  	} else if(mouseX<windowWidth/2 && mouseY<windowHeight/2){
 
  		frameRate(10);
- 		pX = pX + random(-2,2)
- 		pY = pY + random(-2,2)
+
  		changeText4();
 
  	}
@@ -191,7 +195,7 @@ x.addListener(myFunction) // Attach listener function on state changes
 
 function changeText1(){ //text change for top right circle
 
-	$("#moreaboutme").html("I'm Fon. <br /> Currently a 4th year<br /> B.Arch and B.HCI student<br /> at Carnegie Mellon University.")
+	$("#moreaboutme").html("I'm Fon. <br /> Currently a 4th year<br /> B.Arch and B.HCI student<br /> at Carnegie Mellon University. <br /><br />I'm interested in both <br />spatial and UX design!")
 	$("#projects").html("Projects")
 	$("#contactme").html("Contact Me")
 

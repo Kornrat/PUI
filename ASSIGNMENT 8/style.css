@@ -20,7 +20,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 		
 	text-align: left;
-
+	display: block;
 }
 
 #gridcon {
@@ -59,6 +59,12 @@ body {
 
 }
 
+#intro { /*p5 canvas*/
+
+	display: block;
+	padding-bottom: 10%
+
+}
 
 
 #sideim { /*side image container*/
@@ -106,21 +112,18 @@ img{ /*images in project page*/
 
 .projectName { /*project name in project page*/
 	color:red;
-	margin-left:40px;
 	font-size: 80px;
 }
 
 
 #contentgrid { /*project page container grid*/
-	margin:30px;
+	margin:3%;
 	display:flex;
-	overflow-y: hidden;
-	position: relative;
+
 }
 
 #content { /*project page text container*/
-
-		width:50%;
+	position: fixed;
 }
 
 #images { /*project page images*/
@@ -139,8 +142,8 @@ img{ /*images in project page*/
 
 	text-align: justify;
 	line-height: 25px;
-	margin-left:40px;
-	margin-right: 100px;
+			width:85%;
+
 
 	font-size: 12px;
 
