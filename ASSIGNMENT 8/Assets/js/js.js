@@ -15,7 +15,7 @@ $(".project").hover(function hoov() { //hover over project names
 	$(".project").not($(this)).addClass("outline"); //change text style
 
 	var imageselector = $(this).text();
-	var link = "images/" + imageselector + ".png"
+	var link = "Assets/images/home/" + imageselector + ".png"
 
 	$("#sideimage").attr("src",	link); //change image according to project
 
@@ -40,7 +40,7 @@ $(document).ready(function(){
 	$(".project").click(function (){ //when each project name is clicked
 
 		var linkselector = $(this).text();
-		var gotolink = linkselector + ".html"
+		var gotolink = "Projects/" + linkselector + ".html"
 
 
 		$("body").fadeOut(500, redirectPage);      
@@ -69,7 +69,7 @@ function setup(){
 
 function draw(){
 
-	var mywidth = document.body.clientWidth
+	var mywidth = document.body.clientWidth; //width of each screen
 
 	var cnv = createCanvas(mywidth, windowHeight)
 	cnv.parent("#intro")

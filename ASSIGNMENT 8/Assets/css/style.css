@@ -135,6 +135,8 @@ img{ /*images in project page*/
 .back { /*back button*/
 
 	color:red;
+	position: fixed;
+
 	text-decoration: none;
 }
 
