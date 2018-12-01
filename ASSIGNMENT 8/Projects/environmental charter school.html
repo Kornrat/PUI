@@ -4,48 +4,55 @@
     <title>Fon Kornrat Euchukanonchai</title>
     <meta charset="UTF-8">
 
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 501px)" href="../Assets/css/style.css" />
+    <!--css for multiple screens-->
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1001px)" href="../Assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 501px) and (max-width: 1000px)" href="../Assets/css/tablet.css" />
 	<link rel="stylesheet" type="text/css" media="screen and (max-width: 500px)" href="../Assets/css/mobile.css" />
-	
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+    <!--jquery cdn-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
 </head>
 
 <body>
 
-<div id="contentgrid">
+	<!--wrapper for content-->
+
+	<div id="contentgrid">
+
+		<!--left side content-->
+
+		<div class="content">
+
+			<!--back button-->
+
+			<a class="back" href="../home.html#gridcon">◂ Back to projects</a>
+			<p class="projectName">Environmental<br>Charter<br>School</p>
+			<p class="projectText">
+
+				type: architecture<br>
+				year: 2018<br><br>
+
+				This project is a design for a middle school in Uptown, Pittsburgh. The main concept of this project is to increase the interaction of students within their grade. This is done by organizing the classrooms into three sets of three classrooms, each set having access to a central meeting room, which they can open into, and form larger spaces or connect to other classrooms. The staggered stacking of classrooms allows for optimal sunlight exposure, as well as dynamic views from one level to the next. The skylight monitors and the glass floor of the meeting rooms allows for light from the roof to penetrate deep into the common space and other rooms below. The roof provides space for plant beds for the incorporation of urban agriculture in the curriculum, as well as a PV array. These are
+				all accessible so that their function and uses can be taught to the students. The southern glass facade is a double skin facade with operable louvers, and operable vents at the bottom for sunlight control and ventilation during the summer months.
+			</p>
+
+		</div>
 
 
-	<div class="content">
-		<a class="back" href="../home.html#gridcon">◂ Back to projects</a>
+		<!--wrapper for right side images-->
 
-		<p class="projectName">Environmental<br>Charter<br>School</p>
+		<div id="images">
 
-		<p class="projectText">
+			<img src="../Assets/images/projects/environmental charter school/exterior.jpg">
+			<img src="../Assets/images/projects/environmental charter school/core.jpg">
+			<img src="../Assets/images/projects/environmental charter school/corezoomed.jpg">
+			<img src="../Assets/images/projects/environmental charter school/CLASSROOMS.jpg">
 
-		type: architecture<br>
-		year: 2018<br><br>
+		</div>
 
-		This project is a design for a middle school in Uptown, Pittsburgh. The main concept of this project is to increase the interaction of students within their grade. This is done by organizing the classrooms into three sets of three classrooms, each set having access to a central meeting room, which they can open into, and form larger spaces or connect to other classrooms. The staggered stacking of classrooms allows for optimal sunlight exposure, as well as dynamic views from one level to the next. The skylight monitors and the glass floor of the meeting rooms allows for light from the roof to penetrate deep into the common space and other rooms below. The roof provides space for plant beds for the incorporation of urban agriculture in the curriculum, as well as a PV array. These are
-all accessible so that their function and uses can be taught to the students. The southern glass facade is a double skin facade with operable louvers, and operable vents at the bottom for sunlight control and ventilation during the summer months.
-
-
-</p>
-	</div>
-
-<div id="images">
-<img src="../Assets/images/projects/environmental charter school/exterior.jpg">
-
-<img src="../Assets/images/projects/environmental charter school/core.jpg">
-<img src="../Assets/images/projects/environmental charter school/corezoomed.jpg">
-<img src="../Assets/images/projects/environmental charter school/CLASSROOMS.jpg">
-
-
-
-
-</div>
+	<!--local js file-->
     <script src="../Assets/js/js.js"></script>
 
 </body>

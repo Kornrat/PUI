@@ -2,21 +2,30 @@
 <html>
 <head>
     <title>Fon Kornrat Euchukanonchai</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 501px)" href="../Assets/css/style.css" />
+    <meta charset="UTF-8">    
+
+    <!--css for multiple screens-->
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1001px)" href="../Assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 501px) and (max-width: 1000px)" href="../Assets/css/tablet.css" />
 	<link rel="stylesheet" type="text/css" media="screen and (max-width: 500px)" href="../Assets/css/mobile.css" />
+
+    <!--jquery cdn-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-
 
 </head>
 
 <body>
 
+
+<!--wrapper for content-->
 <div id="contentgrid">
 
+	<!--left side content-->
 
 	<div class="content">
+
+		<!--back button-->
+
 		<a class="back" href="../home.html#gridcon">◂ Back to projects</a>
 
 		<p class="projectName">Chinoiseries</p>
@@ -31,21 +40,24 @@
 
 Modern. Playful. Dignified. Harking back to centuries of tradition, Chinoiseries reintroduces traditional clothing of Asian cultures through its marriage with western references, materials and modern technology. The white and blue of Chinoiserie porcelain like delftware set the color scheme of this line, with different shades of denim representing the blue paired with white textiles of varied weights and opacities. View our line, photobook and conceptual design portfolio below.
 
-</p>
+		</p>
 	</div>
 
+	<!--wrapper for right side images-->
 
-<div id="images">
-<img src="../Assets/images/projects/chinoiseries/all.jpg">
-<img src="../Assets/images/projects/chinoiseries/julia.jpg">
-<img src="../Assets/images/projects/chinoiseries/bill.jpg">
-<img src="../Assets/images/projects/chinoiseries/rhea.jpg">
+	<div id="images">
 
+		<img src="../Assets/images/projects/chinoiseries/all.jpg">
+		<img src="../Assets/images/projects/chinoiseries/julia.jpg">
+		<img src="../Assets/images/projects/chinoiseries/bill.jpg">
+		<img src="../Assets/images/projects/chinoiseries/rhea.jpg">
 
+	</div>
 
 </div>
-</div>
-    <script src="../Assets/js/js.js"></script>
+
+<!--local js file-->
+<script src="../Assets/js/js.js"></script>
 
 </body>
 </html>

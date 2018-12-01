@@ -56,13 +56,6 @@ $(document).ready(function(){
 
 
 
-function setup(){
-}
-
-
-
-
-
 //p5//
 
 	var sW = 6;
@@ -109,7 +102,7 @@ function draw(){
  	if(mouseX>windowWidth/2 && mouseY<windowHeight/2){ //hover over top right circle
 
  		frameRate(10) 
- 		r1 = 370 + random(1,20) //size change and shake
+ 		r1 = 350 + random(1,20) //size change and shake
  		r2 = 200
  		r3 = 200
  		changeText1(); //text changes
@@ -117,7 +110,7 @@ function draw(){
  	} else if(mouseX>windowWidth/2 && mouseY>windowHeight/2){ //hover over bottom right circle
 
  		frameRate(10); 
- 		r3 = 370 + random(1,20); //size change and shake
+ 		r3 = 350 + random(1,20); //size change and shake
   		r1 = 200;
  		r2 = 200;
  		changeText3();//text changes
@@ -125,7 +118,7 @@ function draw(){
  	} else if(mouseX<windowWidth/2 && mouseY>windowHeight/2){ //hover over bottom left circle
 
  		frameRate(10)
- 		r2 = 370 + random(1,20)//size change and shake
+ 		r2 = 350 + random(1,20)//size change and shake
   		r1 = 200
  		r3 = 200
  		changeText2(); //text changes
@@ -133,11 +126,13 @@ function draw(){
  	} else if(mouseX<windowWidth/2 && mouseY<windowHeight/2){
 
  		frameRate(10);
- 		pX = pX + random(-5,10)
- 		pY = pY + random(-5,10)
+ 		scale(random(1,1.03))
+ 		introT;
  		changeText4();
 
  	}
+
+
 
 //p5 MEDIA CHANGES
 function myFunction(x) {

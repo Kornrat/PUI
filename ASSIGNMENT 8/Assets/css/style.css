@@ -6,7 +6,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-@media screen and (min-width: 501px){
+@media screen and (min-width: 801px){
 
 
 
@@ -23,14 +23,14 @@ body {
 	display: block;
 }
 
-#gridcon {
+#gridcon { /*content wrapper*/
 	display:grid;
 	grid-template-columns: auto auto;
 }
 
 
 
-.circleText {
+.circleText { /*text in circle*/
 
 	text-align: center;
 	color:red;
@@ -92,13 +92,6 @@ body {
 }
 
 
-img{ /*images in project page*/
-	width:750px;
-	display:block;
-	margin-left:auto;
-	margin-right:auto;
-}
-
 
 
 #iText { /*introduction text*/
@@ -107,6 +100,7 @@ img{ /*images in project page*/
 
 	color:red;
 	font-size:80px;
+	width:50%;
 }
 
 
@@ -119,18 +113,28 @@ img{ /*images in project page*/
 #contentgrid { /*project page container grid*/
 	margin:3%;
 	display:flex;
+	max-width: 100%;
 
 }
 
-#content { /*project page text container*/
+.content { /*project page text container*/
 	position: fixed;
+	width:30%;
 }
 
 #images { /*project page images*/
 
-		width:50%;
+	margin-left: 33%;
+	width:70%;
 
 }
+
+
+img{ /*images in project page*/
+	width:100%;
+
+}
+
 
 .back { /*back button*/
 

@@ -3,9 +3,13 @@
 <head>
     <title>Fon Kornrat Euchukanonchai</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 501px)" href="../Assets/css/style.css" />
+
+    <!--css for multiple screens-->
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1001px)" href="../Assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 501px) and (max-width: 1000px)" href="../Assets/css/tablet.css" />
 	<link rel="stylesheet" type="text/css" media="screen and (max-width: 500px)" href="../Assets/css/mobile.css" />
 
+    <!--jquery cdn-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
@@ -13,80 +17,50 @@
 </head>
 
 <body>
+	
+	<!--wrapper for content-->
 
-<div id="contentgrid">
+	<div id="contentgrid">
+		
+		<!--left side content-->
+		<div class="content">
 
+			<!--back button-->
+			<a class="back" href="../home.html#gridcon">◂ Back to projects</a>
 
-	<div class="content">
-		<a class="back" href="../home.html#gridcon">◂ Back to projects</a>
+			<p class="projectName">Ecomorphologies</p>
 
-		<p class="projectName">Ecomorphologies</p>
+			<p class="projectText">
 
-		<p class="projectText">
+				type: architecture<br>
+				year: 2017<br>
+				with: Christine Zhu<br><br>
 
-		type: architecture<br>
-		year: 2017<br>
-		with: Christine Zhu<br><br>
+				Located in Pittsburgh’s Strip District, between McCollough bridge and 21st street
+				by the Allegheny River, this large residential project aims to create environmentally
+				sensitive housing which reacts to both water fl ow and human circulation.
 
-		Located in Pittsburgh’s Strip District, between McCollough bridge and 21st street
-by the Allegheny River, this large residential project aims to create environmentally
-sensitive housing which reacts to both water fl ow and human circulation.
+				Pittburgh mapped as an industrial town. Overlayed Pittsburgh maps of and around the site from 1870, 1890, 1910, 1940, and 2015. Th e riverfront fi rst emerged as a convenient industrial zone, as the river provided as a dump for toxic and waste. “Th e Strip District” is now a part residential and commercial district, close but not connected to the riverfront.
 
-Pittburgh mapped
-as an industrial
-town. Overlayed
-Pittsburgh maps
-of and around
-the site from
-1870, 1890, 1910,
-1940, and 2015. Th e riverfront fi rst emerged
-as a convenient
-industrial zone, as
-the river provided
-as a dump
-for toxic and
-waste. “Th e Strip
-District” is now
-a part residential
-and commercial
-district, close but
-not connected to
-the riverfront.
+				Pittsburgh mapped environmentally, signalling number of Combined Sewer Overfl ows. Shows how the area surrounding the site is constantly being polluted, another potential reason the site and the Strip District is currently not connected with the water front. 
 
-Pittsburgh
-mapped environmentally,
-signalling
-number of
-Combined Sewer
-Overfl ows. Shows
-how the area
-surrounding the
-site is constantly
-being polluted,
-another potential
-reason the site
-and the Strip District
-is currently
-not connected
-with the water
-front. 
+			</p>
+		</div>
 
-</p>
+		<!--wrapper for right side images-->
+
+		<div id="images">
+		
+			<img src="../Assets/images/projects/ecomorphologies/axon.png">
+
+			<img src="../Assets/images/projects/ecomorphologies/render.png">
+
+		</div>
+
 	</div>
 
+	<!--local js file-->
 
-
-
-<div id="images">
-<img src="../Assets/images/projects/ecomorphologies/axon.png">
-
-<img src="../Assets/images/projects/ecomorphologies/render.png">
-
-
-</div>
-
-
-</div>
     <script src="../Assets/js/js.js"></script>
 
 </body>

@@ -2,25 +2,21 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-@media screen and (max-width: 500px){
-
-
+@media screen and (max-width: 1000px){	
 
 
 body{
 	background: white;
 	font-family: 'Roboto', sans-serif;
-		
 	text-align: left;
 }
 
 #iText {  /*introduction text*/
 
 	color:red;
-	font-size:30px;
+	font-size:60px;
 	transform: translate(10%,0);
-
-	line-height: 40px;
+	width:50%;
 
 	
 }
@@ -57,9 +53,9 @@ body{
 	margin-left: 5%%;
 
 	color: red;
-	font-size: 14px;
+	font-size: 25px;
 
-	line-height:30px;
+	line-height:40px;
 	display:inline;
 
 }
@@ -76,16 +72,16 @@ body{
 
 
 #sideim { /*side image container*/
-	transform: translate(0, 20%);
 	grid-column:2;
+	float: left;
+	margin-right: 20%
 
 }
 
 #sideimage{ /*side image*/
 
-	float:left;
 	margin-top: 50%;
-	width:200px;
+	width:400px;
 }
 
 
@@ -93,36 +89,42 @@ body{
 
 
 #contentgrid { /*project page container grid*/
-	display:block;
+	display:flex;
 
-	margin-left:5%;
-	margin-right:5%;
+	max-width: 100%
+
 }
 
-#content { /*project page text container*/
+.content { /*project page text container*/
+	margin: 3%;
+	width:30%;
+}
 
-
+#images { /*project page images wrapper*/
+	width:70%;
+	margin-top:20%;
 }
 
 img{ /*images in project page*/
+	padding-bottom: 5%;
 	width:100%;
-	display:block;
-	padding-bottom: 5%; 	
 
 }
 
 .back { /*back button*/
 
+	position: fixed;
 	transform: translate(0, -5%);
 	color:red;
 	text-decoration: none;
+	background: white;
 }
 
 .projectText { /*project page text*/
 
 	text-align: justify;
-	line-height: 28px;
-	font-size: 16px;
+	line-height: 23px;
+	font-size: 13px;
 
 }
 
@@ -132,5 +134,7 @@ img{ /*images in project page*/
 }
 
 
+
+}
 
 }

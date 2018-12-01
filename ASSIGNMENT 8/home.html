@@ -4,36 +4,40 @@
     <title>Fon Kornrat Euchukanonchai</title>
     <meta charset="UTF-8">
 
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 501px)" href="Assets/css/style.css" />
+	<!--css for multiple screens-->
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1001px)" href="Assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 1000px)" href="Assets/css/tablet.css" />
 	<link rel="stylesheet" type="text/css" media="screen and (max-width: 500px)" href="Assets/css/mobile.css" />
 
-
+	<!--jquery cdn-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--p5 and p5dom cdn-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
 
-
-
 <body>
 
 	<div class="container-fluid">
 
+	<!--introduction text-->
 		<p id="iText">
-		A collection of <br>projects by Fon E.
+		A collection of projects by Fon E.
 		</p>
 
 	</div>
 
+	<!--p5 canvas-->
 	<div id="intro">
 
-
-
+		<!--text inside circle-->
 		<p class="circleText" id="moreaboutme">
 		More<br>about<br>me!
 		</p>
@@ -48,9 +52,10 @@
 
 	</div>
 
-
-
+	<!--wrapper-->
 	<div id="gridcon">
+
+		<!--project list-->
 
 		<div id="projectlist">
 			<ul class="list-group" id="projects">
@@ -92,22 +97,20 @@
 
 
 			</ul>
-			<br>
-			<br>
+
+
 
 		</div>
 
+		<!--changing images-->
 		<div id="sideim">
 
 			<img id="sideimage">
 
 		</div>
-
-
-
 	</div>
 
-
+	<!--local javascript file-->
     <script src="Assets/js/js.js"></script>
 
 </body>

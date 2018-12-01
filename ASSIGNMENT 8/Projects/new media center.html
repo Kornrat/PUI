@@ -3,48 +3,57 @@
 <head>
     <title>Fon Kornrat Euchukanonchai</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 501px)" href="../Assets/css/style.css" />
+
+    <!--css for multiple screens-->
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1001px)" href="../Assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 501px) and (max-width: 1000px)" href="../Assets/css/tablet.css" />
 	<link rel="stylesheet" type="text/css" media="screen and (max-width: 500px)" href="../Assets/css/mobile.css" />
 
+    <!--jquery cdn-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-
 
 </head>
 
 <body>
 
-<div id="contentgrid">
+	<!--wrapper for content-->
+	<div id="contentgrid">
+
+		<!--left side content-->
+		<div class="content">
+
+			<!--back button-->
+
+			<a class="back" href="../home.html#gridcon">◂ Back to projects</a>
+
+			<p class="projectName">New Media Center</p>
+
+			<p class="projectText">
+
+			type: architecture<br>
+			year: 2017<br><br>
+
+			This proposal for the experimental performances and art center is one that embodies the qualities of new media art in its language of construction and poetry of design. New media art is an abstract concept that is constantly being re-defined by definition due to its relative adjective “new”. As technology advances, the boundaries for this area of exploration expand and morph into new understandings of what this art type really means. Correspondingly, the proposed building is one that allows for flexibility in the form of customizable seating arrangements, room sizes, ceiling heights, brightness, and types of lighting, allowing the building to become a blank slate ready to accommodate any new media art in whatever form it may come in.
 
 
-	<div class="content">
-		<a class="back" href="../home.html#gridcon">◂ Back to projects</a>
 
-		<p class="projectName">New Media Center</p>
-
-		<p class="projectText">
-
-		type: architecture<br>
-		year: 2017<br><br>
-
-		This proposal for the experimental performances and art center is one that embodies the qualities of new media art in its language of construction and poetry of design. New media art is an abstract concept that is constantly being re-defined by definition due to its relative adjective “new”. As technology advances, the boundaries for this area of exploration expand and morph into new understandings of what this art type really means. Correspondingly, the proposed building is one that allows for flexibility in the form of customizable seating arrangements, room sizes, ceiling heights, brightness, and types of lighting, allowing the building to become a blank slate ready to accommodate any new media art in whatever form it may come in.
+			</p>
+		</div>
 
 
 
-</p>
+	<!--wrapper for right side images-->
+
+
+	<div id="images">
+
+		<img src="../Assets/images/projects/newmediacenter/plans.jpg">
+		<img src="../Assets/images/projects/newmediacenter/collage.jpg">
+
 	</div>
 
+	<!--local js file-->
 
-
-
-
-<div id="images">
-<img src="../Assets/images/projects/newmediacenter/plans.jpg">
-
-<img src="../Assets/images/projects/newmediacenter/collage.jpg">
-
-
-</div>
     <script src="../Assets/js/js.js"></script>
 
 </body>
