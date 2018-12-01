@@ -1,0 +1,158 @@
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@media screen and (min-width: 801px){
+
+
+
+
+
+body {
+
+	cursor: crosshair;
+
+	background: white;
+	font-family: 'Roboto', sans-serif;
+		
+	text-align: left;
+	display: block;
+}
+
+#gridcon { /*content wrapper*/
+	display:grid;
+	grid-template-columns: auto auto;
+}
+
+
+
+.circleText { /*text in circle*/
+
+	text-align: center;
+	color:red;
+	font-size: 20px;
+    -webkit-transform: translate(-40%, -60%); 
+    position: absolute;
+
+}
+
+#projects { /*project name list*/
+
+		list-style-type: none;
+}
+
+#projectlist { /*project name list container*/
+
+	cursor: pointer;
+
+	margin-left: 80px;
+	grid-column:1;
+	color: red;
+	font-size: 40px;
+
+	line-height:70px;
+	display:inline;
+
+}
+
+#intro { /*p5 canvas*/
+
+	display: block;
+	padding-bottom: 10%
+
+}
+
+
+#sideim { /*side image container*/
+
+	grid-column:2;
+		margin-left:200px;
+}
+
+
+#sideimage{ /*side image*/
+
+	float:left;
+	margin-top: 200px;
+	width:600px;
+}
+
+
+.outline { /*style change for outline*/
+
+	color: transparent;
+	-webkit-text-stroke-width: 0.5px;
+   -webkit-text-stroke-color: grey;
+
+	border-bottom: none;
+}
+
+
+
+
+#iText { /*introduction text*/
+
+	transform: translate(20%,0);
+
+	color:red;
+	font-size:80px;
+	width:50%;
+}
+
+
+.projectName { /*project name in project page*/
+	color:red;
+	font-size: 80px;
+}
+
+
+#contentgrid { /*project page container grid*/
+	margin:3%;
+	display:flex;
+	max-width: 100%;
+
+}
+
+.content { /*project page text container*/
+	position: fixed;
+	width:30%;
+}
+
+#images { /*project page images*/
+
+	margin-left: 33%;
+	width:70%;
+
+}
+
+
+img{ /*images in project page*/
+	width:100%;
+
+}
+
+
+.back { /*back button*/
+
+	color:red;
+	position: fixed;
+
+	text-decoration: none;
+}
+
+.projectText { /*project page text*/
+
+	text-align: justify;
+	line-height: 25px;
+			width:85%;
+
+
+	font-size: 12px;
+
+}
+
+}

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@media screen and (max-width: 500px){
+
+
+
+
+body{
+	background: white;
+	font-family: 'Roboto', sans-serif;
+		
+	text-align: left;
+}
+
+#iText {  /*introduction text*/
+
+	color:red;
+	font-size:30px;
+	transform: translate(10%,0);
+
+	line-height: 40px;
+
+	
+}
+
+.circleText {/*text in circle*/
+
+	text-align: center;
+	color:red;
+	font-size: 10px;
+    -webkit-transform: translate(-40%, -60%); 
+    position: absolute;
+
+}
+
+#gridcon { /*content wrapper*/
+	margin-top: 20%;
+	display:grid;
+	grid-template-columns: 70% 30%;
+}
+
+.projectheader { /*project page header text*/
+	font-size: 20px;
+}
+
+#projects { /*project name list*/
+
+		list-style-type: none;
+}
+
+#projectlist { /*project name list container*/
+
+	cursor: pointer;
+
+	margin-left: 5%%;
+
+	color: red;
+	font-size: 14px;
+
+	line-height:30px;
+	display:inline;
+
+}
+
+.outline { /*style change for outline*/
+
+	color: transparent;
+	-webkit-text-stroke-width: 0.1px;
+   -webkit-text-stroke-color: grey;
+
+	border-bottom: none;
+}
+
+
+
+#sideim { /*side image container*/
+	transform: translate(0, 20%);
+	grid-column:2;
+
+}
+
+#sideimage{ /*side image*/
+
+	float:left;
+	margin-top: 50%;
+	width:200px;
+}
+
+
+
+
+
+#contentgrid { /*project page container grid*/
+	display:block;
+
+	margin-left:5%;
+	margin-right:5%;
+}
+
+#content { /*project page text container*/
+
+
+}
+
+img{ /*images in project page*/
+	width:100%;
+	display:block;
+	padding-bottom: 5%; 	
+
+}
+
+.back { /*back button*/
+
+	transform: translate(0, -5%);
+	color:red;
+	text-decoration: none;
+}
+
+.projectText { /*project page text*/
+
+	text-align: justify;
+	line-height: 28px;
+	font-size: 16px;
+
+}
+
+.projectName { /*project name in project page*/
+	color:red;
+	font-size: 40px;
+}
+
+
+
+}
