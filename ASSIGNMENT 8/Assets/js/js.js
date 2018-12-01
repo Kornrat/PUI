@@ -126,10 +126,15 @@ function draw(){
  	} else if(mouseX<windowWidth/2 && mouseY<windowHeight/2){
 
  		frameRate(10);
- 		scale(random(1,1.03))
- 		introT;
- 		changeText4();
 
+ 		r2 = 200
+  		r1 = 200
+ 		r3 = 200
+
+ 		var rS = random(79, 83); 
+ 		introT.style('font-size', rS + "px"); //size change
+
+ 		changeText4();
  	}
 
 
